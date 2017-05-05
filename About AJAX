@@ -44,3 +44,27 @@ $.get( "ajax/test.html", function( data ) {
   alert( "Load was performed." );
 });
 This example fetches the requested HTML snippet and inserts it on the page.
+
+
+Alert the results from requesting test.cgi with an additional payload of data (HTML or XML, depending on what was returned).
+
+1
+2
+3
+4
+$.get( "test.cgi", { name: "John", time: "2pm" } )
+  .done(function( data ) {
+    alert( "Data Loaded: " + data );
+  });
+Get the test.php page contents, which has been returned in json format (<?php echo json_encode( array( "name"=>"John","time"=>"2pm" ) ); ?>), and add it to the page.
+
+1
+2
+3
+4
+5
+$.get( "test.php", function( data ) {
+  $( "body" )
+    .append( "Name: " + data.name ) // John
+    .append( "Time: " + data.time ); //  2pm
+}, "json" );
