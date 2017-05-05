@@ -1,0 +1,16 @@
+jQuery.get( url [, data ] [, success ] [, dataType ] )Returns: jqXHR
+Description: Load data from the server using a HTTP GET request.
+
+version added: 1.0jQuery.get( url [, data ] [, success ] [, dataType ] )
+url
+Type: String
+A string containing the URL to which the request is sent.
+data
+Type: PlainObject or String
+A plain object or string that is sent to the server with the request.
+success
+Type: Function( PlainObject data, String textStatus, jqXHR jqXHR )
+A callback function that is executed if the request succeeds. Required if dataType is provided, but you can use null or jQuery.noop as a placeholder.
+dataType
+Type: String
+The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
