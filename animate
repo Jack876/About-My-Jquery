@@ -69,3 +69,8 @@ $("button").click(function(){
 $("#stop").click(function(){
   $("#panel").stop();
 });
+
+
+$("button").click(function(){
+$("p").hide(1000);
+});
