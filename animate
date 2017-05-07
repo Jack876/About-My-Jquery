@@ -26,3 +26,8 @@ $(document).ready(function(){
 
 </body>
 </html>
+
+
+$("button").click(function(){
+  $("div").animate({left:'250px'});
+}); 
