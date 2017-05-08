@@ -331,3 +331,21 @@ display:none;
  
 </body>
 </html>
+
+
+<head>
+<script src="/jquery/jquery-1.11.1.min.js">
+</script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").animate({left:'250px'},5000,alert("小熊猫"));
+  });
+});
+</script> 
+</head>
+ 
+<body>
+<button>开始动画</button>
+<p>默认情况下，所有 HTML 元素的位置都是静态的，并且无法移动。如需对位置进行操作，记得首先把元素的 CSS position 属性设置为 relative、fixed 或 absolute。</p>
+<div style="background:#98bf21;h
