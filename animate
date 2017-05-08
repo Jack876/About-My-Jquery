@@ -156,3 +156,25 @@ $(document).ready(function(){
 <p>这是另一个段落。</p>
 </body>
 </html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="/jquery/jquery-1.11.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeIn();
+    $("#div2").fadeIn("slow");
+    $("#div3").fadeIn(9000);
+  });
+});
+</script>
+</head>
+
+<body>
+<p>演示带有不同参数的 fadeIn() 方法。</p>
+<button>点击这里，使三个矩形淡入</button>
+<br><br>
+<div id="div1" style="width:80px;heig
